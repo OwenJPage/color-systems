@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = [
+    "color-systems",
+    "color-systems-macros",
+    "colour-systems-testing-macros",
+]

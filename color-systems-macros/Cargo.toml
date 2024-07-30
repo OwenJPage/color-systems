@@ -1,0 +1,11 @@
+[package]
+name = "color-systems-macros"
+version = "0.0.0-dev"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0", features = ["full", "parsing", "fold", "clone-impls", "proc-macro", "visit-mut", "printing"] }
+quote = "1.0"

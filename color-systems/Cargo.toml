@@ -1,0 +1,35 @@
+[package]
+name = "color-systems"
+version = "0.0.0-dev"
+edition = "2021"
+readme = "readme.md"
+
+[lints.rust]
+missing_docs = "warn"
+unused_imports = "deny"
+
+[lints.clippy]
+missing_docs_in_private_items = "warn"
+missing_panics_doc = "deny"
+missing_errors_doc = "warn"
+
+enum_glob_use = "deny"
+suspicious = "warn"
+pedantic = "warn"
+nursery = "warn"
+style = "warn"
+perf = "warn"
+cargo = "warn"
+unwrap_used = "warn"
+missing_const_for_fn = "deny"
+todo = "deny"
+
+[dependencies]
+color-systems-macros = { path = "../color-systems-macros", version = "0.0.0-dev", optional = true }
+
+
+[features]
+colour_spelling = [
+    "dep:color-systems-macros"
+]
+
